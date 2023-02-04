@@ -12,7 +12,10 @@ namespace DomainModel
         public string profilePhotoUrl;
         public string pronouns;
         public Array<Class> classes;
-        
+
+        public Assignment createAssignment(Assignment assignment, Class selectedClass){
+            selectedClass.addAssignment(assignment);
+        }
 
     }
 }

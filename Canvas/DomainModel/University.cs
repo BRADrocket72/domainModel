@@ -9,6 +9,9 @@ namespace DomainModel
     {
         public Guid id;
         public string name;
-        
+        public Array<Guid> instructorIds;
+        public virtual Array<Instructor> instructors;
+        public Array<Guid> studentIds;
+        public Array<Student> students;
     }
 }

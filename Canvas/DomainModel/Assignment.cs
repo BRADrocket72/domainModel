@@ -11,6 +11,9 @@ namespace DomainModel
         public string name;
         public string description;
         public Array<string> acceptedFileTypes;
-        
+        public Array<Guid> submissionIds;
+        public virtual Array<Submission> submisssions;
+
+
     }
 }

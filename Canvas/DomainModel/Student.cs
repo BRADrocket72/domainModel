@@ -14,6 +14,11 @@ namespace DomainModel
         public double GPA;
         public Array<Guid> enrolledClassIds;
         public virtual Array<Class> enrolledClasses;
-        
+
+
+        public void submitAssignment(Submission submission, Assignment assignment)
+        {
+            assignment.submisssions.add(submission);
+        }
     }
 }
